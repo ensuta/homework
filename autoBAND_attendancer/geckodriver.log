@@ -207,3 +207,4 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't fin
 console.error: SearchCache: "_readCacheFile: Error reading cache file:" (new Error("", "(unknown module)"))
 1600016548945	Marionette	INFO	Listening on port 4142
 1600016549094	Marionette	WARN	TLS certificate errors will be ignored for this session
+1600022492909	Marionette	INFO	Stopped listening on port 4142
