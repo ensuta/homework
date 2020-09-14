@@ -1,0 +1,6 @@
+sudo apt update
+sudo apt install git-all
+sudo apt install python3.8
+sudo apt install build-essential gdb
+sudo apt install snapd
+sudo snap install --classic code
