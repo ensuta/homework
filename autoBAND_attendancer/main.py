@@ -1,5 +1,6 @@
 from selenium import webdriver
 import time
+import datetime
 
 logintime = 120
 print('2분뒤에 자동출첵이 시작됨 로그인은 수동으로 하셈')
@@ -15,17 +16,15 @@ while loop > 0:
     bwr.get('https://band.us/band/81335499/hashtag/%ED%83%9C%EA%B7%B81') # 밴드 주소를 따와주세요 
     bwr.implicitly_wait(5)
     
-    # 춠석체크 항목으로 이동 
-    '''(문제 발생)'''
-    bwr.find_element_by_xpath('/html/body/div[1]/div[1]/main/section/div[4]/div/div[1]/div/div[2]/div[2]/div/div[5]/div').click()
+    # 춠석체크 항목으로 이동 (해결됨)
+    bwr.find_element_by_xpath('/html/body/div[1]/div[1]/main/section/div[4]/div/div[1]/div/div[2]/div[2]/div/div[5]').click()
     bwr.implicitly_wait(3)
     
     # 출석체크 체크 버튼 누름
-    bwr.find_element_by_xpath('/html/body/div[1]/div[1]/main/div/section/div/div/div[4]/div[4]/div[2]/div/div[2]/ul/li/div/label').click()
+    bwr.find_element_by_xpath('/html/body/div[1]/div[2]/div/div/section/div[2]/div/section/div/div[4]/div[3]/div[2]/div/div[2]/ul/li/div/label').click()
     time.sleep(10)
 
 
 # /html/body/div[1]/div[1]/main/section/div[4]/div/div[1]/div/div[2]/div[2]/div/div[5] 
 # /html/body/div[1]/div[1]/main/section/div[4]/div/div[1]/div/div[2]/div[2]/div/div[5]/div
 # Tab 28번시 맨위의 출석체크 항목으로 이동
-
