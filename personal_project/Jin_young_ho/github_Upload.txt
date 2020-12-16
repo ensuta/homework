@@ -1,0 +1,5 @@
+git status
+git add 'flie_name'
+git commit -m 'file_name'
+git pull
+git push origin master
