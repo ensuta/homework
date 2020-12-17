@@ -110,4 +110,4 @@ btn.place(x = 80, y = 110)
 root.mainloop()
 
 
-#아직 미
+#아직 미완성(incomplete)
